@@ -1,5 +1,5 @@
 {
-  "name": "agb-mercury/medusajs",
+  "name": "@agbtest/mercury",
   "version": "0.0.2-alpha",
   "description": "Cardano Mercury Payments for Medusa JS",
   "author": "Adam K. Dean <adam@crypto2099.io>",
