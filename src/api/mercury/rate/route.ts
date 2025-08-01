@@ -15,21 +15,18 @@ export const POST = async (req: MedusaRequest, res: MedusaResponse) => {
     res.status(400).json({
       message: `From currency code is missing`,
     });
-    return;
   }
 
   if (!to) {
     res.status(400).json({
       message: `To currency code is missing`,
     });
-    return;
   }
 
   if (!amount) {
     res.status(400).json({
       message: `Order amount is missing`,
     });
-    return;
   }
 
   let currency_rate = 1;
@@ -82,7 +79,6 @@ export const POST = async (req: MedusaRequest, res: MedusaResponse) => {
     res.status(500).json({
       message: `Do not have a current ADA price value...`,
     });
-    return;
   }
 
   const ada_rate = recentRates[0].rate;
